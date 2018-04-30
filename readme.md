@@ -41,7 +41,7 @@ const typeDefs = gql`
 
 ## Why not `String.raw`?
 
-It doesn’t unescape characters. For the usage example, if you `console.log(typeDefs)` before and after replacing the import with`const gql = String.raw` you will see the difference in the type description markdown:
+It doesn’t unescape characters. For the usage example, if you `console.log(typeDefs)` before and after replacing the import with `const gql = String.raw` you will see the difference in the type description markdown:
 
 ```diff
     "A foo."
