@@ -4,7 +4,7 @@
 
 A fake template literal tag to trick syntax highlighters, linters and formatters into action. Interpolations and escapes are tested.
 
-## Install
+## Setup
 
 Install with [npm](https://npmjs.com):
 
