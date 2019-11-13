@@ -16,6 +16,7 @@
 - Updated package scripts.
 - Ensure Prettier also lints `.yml` files.
 - Replaced Travis with GitHub Actions for CI.
+- Removed `package-lock.json` from the `.gitignore` file, as it has been disabled anyway.
 - Readme typo fix.
 
 ## 0.1.0
