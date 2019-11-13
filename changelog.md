@@ -9,6 +9,7 @@
 - Replaced old ESLint config with [`eslint-config-env`](https://npm.im/eslint-config-env).
 - Use [`test-director`](https://npm.im/test-director) instead of [`ava`](https://npm.im/ava) for tests.
 - Simplified the package `repository` field.
+- Added a package `main` field.
 - Added a package `engines` field declaring support for Node.js >= v8.10, as that is what ESLint supports. This only limits the dev environment; the published code is very simple and should be able to run almost anywhere.
 - Added a package `browserslist` field, for linting.
 - Moved dev tool config from `package.json` to separate files to reduce the published package size.
