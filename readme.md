@@ -1,6 +1,6 @@
 # fake-tag
 
-[![npm version](https://img.shields.io/npm/v/fake-tag.svg)](https://npm.im/fake-tag) ![Licence](https://img.shields.io/npm/l/fake-tag.svg) [![Github issues](https://img.shields.io/github/issues/jaydenseric/fake-tag.svg)](https://github.com/jaydenseric/fake-tag/issues) [![Github stars](https://img.shields.io/github/stars/jaydenseric/fake-tag.svg)](https://github.com/jaydenseric/fake-tag/stargazers) [![CI status](https://github.com/jaydenseric/fake-tag/workflows/CI/badge.svg)](https://github.com/jaydenseric/fake-tag/actions)
+[![npm version](https://badgen.net/npm/v/fake-tag)](https://npm.im/fake-tag) [![CI status](https://github.com/jaydenseric/fake-tag/workflows/CI/badge.svg)](https://github.com/jaydenseric/fake-tag/actions)
 
 A fake template literal tag to trick linters and formatters into action. Interpolations and escapes are tested.
 

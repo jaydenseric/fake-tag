@@ -17,6 +17,7 @@
 - Ensure Prettier also lints `.yml` files.
 - Replaced Travis with GitHub Actions for CI.
 - Removed `package-lock.json` from the `.gitignore` file, as it has been disabled anyway.
+- Removed some readme badges, and used [badgen.net](https://badgen.net) instead of [shields.io](https://shields.io) for the npm version badge.
 - Readme typo fix.
 
 ## 0.1.0
