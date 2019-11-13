@@ -2,7 +2,7 @@
 
 [![npm version](https://badgen.net/npm/v/fake-tag)](https://npm.im/fake-tag) [![CI status](https://github.com/jaydenseric/fake-tag/workflows/CI/badge.svg)](https://github.com/jaydenseric/fake-tag/actions)
 
-A fake template literal tag to trick linters and formatters into action. Interpolations and escapes are tested.
+A fake template literal tag to trick syntax highlighters, linters and formatters into action. Interpolations and escapes are tested.
 
 This hack will be redundant once comment tags are supported by tools [such as Prettier](https://github.com/prettier/prettier/issues/4360):
 

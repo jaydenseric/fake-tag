@@ -8,6 +8,7 @@
 - Removed [`husky`](https://npm.im/husky) and [`lint-staged`](https://npm.im/lint-staged).
 - Replaced old ESLint config with [`eslint-config-env`](https://npm.im/eslint-config-env).
 - Use [`test-director`](https://npm.im/test-director) instead of [`ava`](https://npm.im/ava) for tests.
+- Updated the package description.
 - Simplified the package `repository` field.
 - Added a package `main` field.
 - Added a package `engines` field declaring support for Node.js >= v8.10, as that is what ESLint supports. This only limits the dev environment; the published code is very simple and should be able to run almost anywhere.
