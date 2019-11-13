@@ -1,26 +1,31 @@
-import test from 'ava'
-import tag from '.'
+const { strictEqual } = require('assert')
+const { TestDirector } = require('test-director')
+const tag = require('.')
 
-test('Empty.', t => {
-  t.is(tag``, '')
+const tests = new TestDirector()
+
+tests.add('Empty.', () => {
+  strictEqual(tag``, '')
 })
 
-test('Escapes.', t => {
-  t.is(tag`\``, '`')
+tests.add('Escapes.', () => {
+  strictEqual(tag`\``, '`')
 })
 
-test('No variables.', t => {
-  t.is(tag`1`, '1')
+tests.add('No variables.', () => {
+  strictEqual(tag`1`, '1')
 })
 
-test('Only variables.', t => {
-  t.is(tag`${1}${2}${3}`, '123')
+tests.add('Only variables.', () => {
+  strictEqual(tag`${1}${2}${3}`, '123')
 })
 
-test('Surrounding variables.', t => {
-  t.is(tag`${1}2${3}`, '123')
+tests.add('Surrounding variables.', () => {
+  strictEqual(tag`${1}2${3}`, '123')
 })
 
-test('Surrounded variables.', t => {
-  t.is(tag`1${2}${3}4`, '1234')
+tests.add('Surrounded variables.', () => {
+  strictEqual(tag`1${2}${3}4`, '1234')
 })
+
+tests.run()

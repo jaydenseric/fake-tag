@@ -23,51 +23,28 @@
   "files": [
     "index.js"
   ],
+  "engines": {
+    "node": ">=8.10"
+  },
+  "browserslist": "> 0.2%, not dead, not OperaMini all",
   "devDependencies": {
-    "ava": "^1.0.0-beta.4",
-    "eslint": "^4.19.1",
-    "eslint-plugin-ava": "^4.5.1",
-    "eslint-plugin-prettier": "^2.5.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.0.4",
-    "prettier": "^1.12.1"
+    "eslint": "^6.6.0",
+    "eslint-config-env": "^11.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-compat": "^3.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import-order-alphabetical": "^1.0.0",
+    "eslint-plugin-jsdoc": "^17.1.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1",
+    "test-director": "^1.0.0"
   },
   "scripts": {
-    "lint": "eslint . --fix && prettier '**/*.{json,md}' --write",
-    "test": "ava",
-    "watch": "ava -w",
-    "precommit": "lint-staged",
-    "prepublishOnly": "npm run lint && npm test"
-  },
-  "lint-staged": {
-    "*.js": "eslint",
-    "*.{json,md}": "prettier -l"
-  },
-  "eslintConfig": {
-    "env": {
-      "es6": true,
-      "node": true,
-      "browser": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:ava/recommended"
-    ],
-    "plugins": [
-      "ava",
-      "prettier"
-    ],
-    "rules": {
-      "curly": [
-        "error",
-        "multi"
-      ],
-      "prettier/prettier": "error"
-    }
-  },
-  "prettier": {
-    "proseWrap": "never",
-    "singleQuote": true,
-    "semi": false
+    "test": "npm run test:eslint && npm run test:prettier && npm run test:api",
+    "test:eslint": "eslint .",
+    "test:prettier": "prettier '**/*.{json,yml,md}' -l",
+    "test:api": "node test",
+    "prepublishOnly": "npm test"
   }
 }
