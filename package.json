@@ -8,10 +8,7 @@
     "email": "me@jaydenseric.com",
     "url": "https://jaydenseric.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jaydenseric/fake-tag.git"
-  },
+  "repository": "github:jaydenseric/fake-tag",
   "homepage": "https://github.com/jaydenseric/fake-tag#readme",
   "bugs": "https://github.com/jaydenseric/fake-tag/issues",
   "keywords": [
