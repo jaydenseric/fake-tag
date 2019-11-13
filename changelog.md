@@ -19,7 +19,7 @@
 - Replaced Travis with GitHub Actions for CI.
 - Removed `package-lock.json` from the `.gitignore` file, as it has been disabled anyway.
 - Removed some readme badges, and used [badgen.net](https://badgen.net) instead of [shields.io](https://shields.io) for the npm version badge.
-- Readme typo fix.
+- Updated the readme with more details, links, and a typo fix.
 - Corrected the first version number in the changelog from `0.1.0` to `1.0.0`.
 
 ## 1.0.0

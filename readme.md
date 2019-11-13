@@ -4,17 +4,6 @@
 
 A fake template literal tag to trick syntax highlighters, linters and formatters into action. Interpolations and escapes are tested.
 
-This hack will be redundant once comment tags are supported by tools [such as Prettier](https://github.com/prettier/prettier/issues/4360):
-
-<!-- prettier-ignore -->
-```js
-/* GraphQL */`
-  {
-    foo
-  }
-`
-```
-
 ## Install
 
 Install with [npm](https://npmjs.com):
@@ -39,9 +28,43 @@ const typeDefs = gql`
 `
 ```
 
+Names other than `gql` can be used for other use cases.
+
+## Why not comment tags?
+
+A comment tag looks like this:
+
+```js
+const QUERY = /* GraphQL */ `
+  {
+    foo
+  }
+`
+```
+
+They are far superior to a fake tag:
+
+- No dependency to manage.
+- No inconvenient imports.
+- No bundle size bloat.
+- No runtime overhead.
+
+Unfortunately not all tools support them yet. [`prettier` has since v1.13.0](https://github.com/prettier/prettier/issues/4360#issuecomment-392391729), but [`eslint-plugin-graphql` at v3.1.0 still doesn’t](https://github.com/apollographql/eslint-plugin-graphql/issues/224).
+
 ## Why not `String.raw`?
 
-It doesn’t unescape characters. For the usage example, if you `console.log(typeDefs)` before and after replacing the import with `const gql = String.raw` you will see the difference in the type description markdown:
+This may be temptingly simple:
+
+```js
+const gql = String.raw
+const QUERY = gql`
+  {
+    foo
+  }
+`
+```
+
+However, it doesn’t unescape characters. For the usage example, if you `console.log(typeDefs)` before and after replacing the import with `const gql = String.raw` you will see the difference in the type description markdown:
 
 ```diff
     "A foo."
