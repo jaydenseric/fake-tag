@@ -1,6 +1,6 @@
 # fake-tag
 
-[![npm version](https://img.shields.io/npm/v/fake-tag.svg)](https://npm.im/fake-tag) ![Licence](https://img.shields.io/npm/l/fake-tag.svg) [![Github issues](https://img.shields.io/github/issues/jaydenseric/fake-tag.svg)](https://github.com/jaydenseric/fake-tag/issues) [![Github stars](https://img.shields.io/github/stars/jaydenseric/fake-tag.svg)](https://github.com/jaydenseric/fake-tag/stargazers) [![Travis status](https://img.shields.io/travis/jaydenseric/fake-tag.svg)](https://travis-ci.org/jaydenseric/fake-tag)
+[![npm version](https://img.shields.io/npm/v/fake-tag.svg)](https://npm.im/fake-tag) ![Licence](https://img.shields.io/npm/l/fake-tag.svg) [![Github issues](https://img.shields.io/github/issues/jaydenseric/fake-tag.svg)](https://github.com/jaydenseric/fake-tag/issues) [![Github stars](https://img.shields.io/github/stars/jaydenseric/fake-tag.svg)](https://github.com/jaydenseric/fake-tag/stargazers) [![CI status](https://github.com/jaydenseric/fake-tag/workflows/CI/badge.svg)](https://github.com/jaydenseric/fake-tag/actions)
 
 A fake template literal tag to trick linters and formatters into action. Interpolations and escapes are tested.
 
