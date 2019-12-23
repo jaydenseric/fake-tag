@@ -1,3 +1,5 @@
+'use strict'
+
 const { strictEqual } = require('assert')
 const { TestDirector } = require('test-director')
 const tag = require('.')

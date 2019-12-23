@@ -10,6 +10,7 @@
 
 ### Patch
 
+- Use strict mode for scripts.
 - In CI, additionally test macOS as well as Node.js v10 and v13.
 
 ## 1.0.1
