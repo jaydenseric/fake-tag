@@ -6,6 +6,7 @@
 
 - Updated Node.js support from v8.10+ to v10+. This is mostly to do with dev dependencies and shouldn’t be a breaking change for the published package.
 - Updated dev dependencies, some of which only support Node.js v10+.
+- Use [`coverage-node`](https://npm.im/coverage-node) for test code coverage.
 
 ### Minor
 
