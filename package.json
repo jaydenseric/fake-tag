@@ -11,6 +11,7 @@
   "repository": "github:jaydenseric/fake-tag",
   "homepage": "https://github.com/jaydenseric/fake-tag#readme",
   "bugs": "https://github.com/jaydenseric/fake-tag/issues",
+  "funding": "https://github.com/sponsors/jaydenseric",
   "keywords": [
     "es6",
     "dummy",
