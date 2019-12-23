@@ -8,6 +8,10 @@
   - Added `.github/funding.yml` to display a sponsor button in GitHub.
   - Added a `package.json` `funding` field to enable npm CLI funding features.
 
+### Patch
+
+- In CI, additionally test macOS as well as Node.js v10 and v13.
+
 ## 1.0.1
 
 ### Patch
