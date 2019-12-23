@@ -5,6 +5,7 @@
 ### Major
 
 - Updated Node.js support from v8.10+ to v10+. This is mostly to do with dev dependencies and shouldn’t be a breaking change for the published package.
+- Updated dev dependencies, some of which only support Node.js v10+.
 
 ### Minor
 
@@ -14,6 +15,7 @@
 
 ### Patch
 
+- Removed the now redundant [`eslint-plugin-import-order-alphabetical`](https://npm.im/eslint-plugin-import-order-alphabetical) dev dependency.
 - Use strict mode for scripts.
 - In CI, additionally test macOS as well as Node.js v10 and v13.
 
