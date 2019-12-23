@@ -2,6 +2,10 @@
 
 ## Next
 
+### Major
+
+- Updated Node.js support from v8.10+ to v10+. This is mostly to do with dev dependencies and shouldn’t be a breaking change for the published package.
+
 ### Minor
 
 - Setup [GitHub Sponsors funding](https://github.com/sponsors/jaydenseric):
