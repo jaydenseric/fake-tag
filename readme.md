@@ -17,7 +17,7 @@ npm install fake-tag
 Import and use the tag with the required name:
 
 ```js
-import gql from 'fake-tag'
+import gql from 'fake-tag';
 
 const typeDefs = gql`
   "A foo."
@@ -25,7 +25,7 @@ const typeDefs = gql`
     "The \`Foo\` ID."
     id: ID!
   }
-`
+`;
 ```
 
 Names other than `gql` can be used for other use cases.
@@ -39,7 +39,7 @@ const QUERY = /* GraphQL */ `
   {
     foo
   }
-`
+`;
 ```
 
 They are far superior to a fake tag:
@@ -56,12 +56,12 @@ Unfortunately not all tools support them yet. [`prettier` has since v1.13.0](htt
 This may be temptingly simple:
 
 ```js
-const gql = String.raw
+const gql = String.raw;
 const QUERY = gql`
   {
     foo
   }
-`
+`;
 ```
 
 However, it doesn’t unescape characters. For the usage example, if you `console.log(typeDefs)` before and after replacing the import with `const gql = String.raw` you will see the difference in the type description markdown:
