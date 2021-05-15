@@ -1,8 +1,6 @@
-'use strict';
-
-const { strictEqual } = require('assert');
-const { TestDirector } = require('test-director');
-const tag = require('.');
+import { strictEqual } from 'assert';
+import TestDirector from 'test-director';
+import tag from './index.js';
 
 const tests = new TestDirector();
 

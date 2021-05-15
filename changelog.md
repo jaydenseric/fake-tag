@@ -2,16 +2,24 @@
 
 ## Next
 
+### Major
+
+- Updated Node.js support to `^12.20 || >= 14.13`.
+- Updated dev dependencies, some of which require newer Node.js versions than were previously supported.
+- The tests are now ESM in an `.mjs` file instead of CJS in a `.js` file.
+
 ### Patch
 
 - Updated dev dependencies.
 - Updated GitHub Actions CI config:
   - Also run on pull request.
+  - Run tests with Node.js v12, v14, v16.
   - Updated `actions/checkout` to v2.
   - Updated `actions/setup-node` to v2.
   - Use the simpler [`npm install-test`](https://docs.npmjs.com/cli/v7/commands/npm-install-test) command.
   - Don’t specify the `CI` environment variable as it’s set by default.
 - Removed `npm-debug.log` from the `.gitignore` file as npm [v4.2.0](https://github.com/npm/npm/releases/tag/v4.2.0)+ doesn’t create it in the current working directory.
+- Improved the package `test:prettier` script.
 - Configured Prettier option `semi` to the default, `true`.
 - Updated the EditorConfig.
 

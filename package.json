@@ -26,27 +26,27 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=10"
+    "node": "^12.20 || >= 14.13"
   },
   "browserslist": "> 0.2%, not dead, not OperaMini all",
   "devDependencies": {
-    "coverage-node": "^2.0.2",
-    "eslint": "^6.8.0",
-    "eslint-config-env": "^13.0.1",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-compat": "^3.3.0",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-jsdoc": "^19.0.0",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1",
-    "test-director": "^3.0.0"
+    "coverage-node": "^5.0.1",
+    "eslint": "^7.26.0",
+    "eslint-config-env": "^20.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jsdoc": "^34.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "test-director": "^6.0.0"
   },
   "scripts": {
     "test": "npm run test:eslint && npm run test:prettier && npm run test:api",
     "test:eslint": "eslint .",
-    "test:prettier": "prettier '**/*.{json,yml,md}' -l",
-    "test:api": "coverage-node test",
+    "test:prettier": "prettier -c .",
+    "test:api": "coverage-node test.mjs",
     "prepublishOnly": "npm test"
   }
 }
