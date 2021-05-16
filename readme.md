@@ -30,7 +30,9 @@ const typeDefs = gql`
 
 Names other than `gql` can be used for other use cases.
 
-## Why not comment tags?
+## FAQ
+
+### Why not comment tags?
 
 A comment tag looks like this:
 
@@ -51,7 +53,7 @@ They are far superior to a fake tag:
 
 Unfortunately not all tools support them yet. [`prettier` has since v1.13.0](https://github.com/prettier/prettier/issues/4360#issuecomment-392391729), but [`eslint-plugin-graphql` at v3.1.0 still doesn’t](https://github.com/apollographql/eslint-plugin-graphql/issues/224).
 
-## Why not `String.raw`?
+### Why not `String.raw`?
 
 This may be temptingly simple:
 
