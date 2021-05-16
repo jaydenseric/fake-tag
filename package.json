@@ -25,6 +25,11 @@
     "index.js"
   ],
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package": "./package.json",
+    "./package.json": "./package.json"
+  },
   "engines": {
     "node": "^12.20 || >= 14.13"
   },
