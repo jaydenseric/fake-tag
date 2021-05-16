@@ -28,7 +28,7 @@
   "engines": {
     "node": "^12.20 || >= 14.13"
   },
-  "browserslist": "> 0.2%, not dead, not OperaMini all",
+  "browserslist": "Node 12.20 - 13 and Node < 13, Node >= 14.13, > 0.2%, not OperaMini all, not dead",
   "devDependencies": {
     "coverage-node": "^5.0.1",
     "eslint": "^7.26.0",

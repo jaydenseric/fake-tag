@@ -11,6 +11,7 @@
 ### Patch
 
 - Updated dev dependencies.
+- Add Node.js to the package `browserslist` field query.
 - Updated GitHub Actions CI config:
   - Also run on pull request.
   - Run tests with Node.js v12, v14, v16.
