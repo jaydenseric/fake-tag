@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function () {
+module.exports = function fakeTag() {
   var tagArgs = arguments;
   return tagArgs[0].reduce(function (accumulator, string, index) {
     accumulator += string;
