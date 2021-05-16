@@ -26,6 +26,7 @@
 - Improved the package `test:prettier` script.
 - Configured Prettier option `semi` to the default, `true`.
 - Updated the EditorConfig.
+- Readme tweaks.
 
 ## 2.0.0
 

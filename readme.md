@@ -6,7 +6,7 @@ A fake template literal tag to trick syntax highlighters, linters and formatters
 
 ## Setup
 
-Install with [npm](https://npmjs.com):
+To install with [npm](https://npmjs.com/get-npm), run:
 
 ```sh
 npm install fake-tag
