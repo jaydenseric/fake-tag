@@ -20,6 +20,7 @@
   - Updated `actions/setup-node` to v2.
   - Use the simpler [`npm install-test`](https://docs.npmjs.com/cli/v7/commands/npm-install-test) command.
   - Don’t specify the `CI` environment variable as it’s set by default.
+- Added a package `sideEffects` field.
 - More specific package `main` path.
 - Removed `npm-debug.log` from the `.gitignore` file as npm [v4.2.0](https://github.com/npm/npm/releases/tag/v4.2.0)+ doesn’t create it in the current working directory.
 - Improved the package `test:prettier` script.
