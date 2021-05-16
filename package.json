@@ -24,7 +24,7 @@
   "files": [
     "index.js"
   ],
-  "main": "index.js",
+  "main": "./index.js",
   "exports": {
     ".": "./index.js",
     "./package": "./package.json",
