@@ -12,23 +12,46 @@ To install with [npm](https://npmjs.com/get-npm), run:
 npm install fake-tag
 ```
 
-## Usage
+## API
 
-Import and use the tag with the required name:
+### function fakeTag
 
-```js
-import gql from 'fake-tag';
+A fake template literal tag that doesn’t do anything except return the tagged template string. Import and use the fake tag with the required name, e.g. `gql`.
 
-const typeDefs = gql`
-  "A foo."
-  type Foo {
-    "The \`Foo\` ID."
-    id: ID!
-  }
-`;
-```
+| Parameter     | Type          | Description                  |
+| :------------ | :------------ | :--------------------------- |
+| `literals`    | Array<string> | Template string literals.    |
+| `expressions` | …\*           | Template string expressions. |
 
-Names other than `gql` can be used for other use cases.
+**Returns:** string — The tagged template string.
+
+#### Examples
+
+_How to `import`._
+
+> ```js
+> import fakeTag from 'fake-tag';
+> ```
+
+_How to `require`._
+
+> ```js
+> const fakeTag = require('fake-tag');
+> ```
+
+_Tagging a GraphQL SDL string with `gql`._
+
+> ```js
+> import gql from 'fake-tag';
+>
+> const typeDefs = gql`
+>   "A foo."
+>   type Foo {
+>     "The \`Foo\` ID."
+>     id: ID!
+>   }
+> `;
+> ```
 
 ## FAQ
 
