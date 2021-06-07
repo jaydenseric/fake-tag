@@ -17,7 +17,7 @@
  * ```js
  * const fakeTag = require('fake-tag');
  * ```
- * @example <caption>Tagging a GraphQL SDL string with `gql`.</caption>
+ * @example <caption>Tagging a [GraphQL](https://graphql.org) SDL string with `gql`.</caption>
  * ```js
  * import gql from 'fake-tag';
  *

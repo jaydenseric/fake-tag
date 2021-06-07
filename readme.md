@@ -39,7 +39,7 @@ _How to `require`._
 > const fakeTag = require('fake-tag');
 > ```
 
-_Tagging a GraphQL SDL string with `gql`._
+_Tagging a [GraphQL](https://graphql.org) SDL string with `gql`._
 
 > ```js
 > import gql from 'fake-tag';
