@@ -31,6 +31,7 @@
 - The exported fake tag function now has the name `fakeTag` instead of being anonymous.
 - Updated the EditorConfig.
 - Readme tweaks.
+- The file `changelog.md` is no longer published.
 
 ## 2.0.0
 
