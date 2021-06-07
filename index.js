@@ -1,5 +1,3 @@
-/* eslint-disable jsdoc/check-param-names */
-
 'use strict';
 
 /**
@@ -32,11 +30,14 @@
  * `;
  * ```
  */
-module.exports = function fakeTag() {
-  var tagArgs = arguments;
-  return tagArgs[0].reduce(function (accumulator, string, index) {
-    accumulator += string;
-    if (index + 1 in tagArgs) accumulator += tagArgs[index + 1];
-    return accumulator;
-  }, '');
+module.exports = function fakeTag(literals, ...expressions) {
+  let string = '';
+
+  for (const [index, literal] of literals.entries()) {
+    string += literal;
+
+    if (index in expressions) string += expressions[index];
+  }
+
+  return string;
 };

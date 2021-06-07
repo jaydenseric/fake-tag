@@ -5,8 +5,10 @@
 ### Major
 
 - Updated Node.js support to `^12.20 || >= 14.13`.
+- Updated browser support to the Browserslist query `> 0.5%, not OperaMini all, not IE > 0, not dead`.
 - Updated dev dependencies, some of which require newer Node.js versions than were previously supported.
 - Added a package `exports` field.
+- Refactored the published module to use more modern ES language features.
 - The tests are now ESM in an `.mjs` file instead of CJS in a `.js` file.
 - Use JSDoc comments and [`jsdoc-md`](https://npm.im/jsdoc-md) in package scripts to generate a new “API” readme section. The published module now contains JSDoc comments, which might affect TypeScript projects.
 
