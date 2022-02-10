@@ -28,7 +28,6 @@
   "main": "./index.js",
   "exports": {
     ".": "./index.js",
-    "./package": "./package.json",
     "./package.json": "./package.json"
   },
   "engines": {
