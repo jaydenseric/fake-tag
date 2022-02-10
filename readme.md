@@ -18,10 +18,10 @@ npm install fake-tag
 
 A fake template literal tag that doesn’t do anything except return the tagged template string. Import and use the fake tag with the required name, e.g. `gql`.
 
-| Parameter     | Type          | Description                  |
-| :------------ | :------------ | :--------------------------- |
-| `literals`    | Array<string> | Template string literals.    |
-| `expressions` | …\*           | Template string expressions. |
+| Parameter     | Type           | Description                  |
+| :------------ | :------------- | :--------------------------- |
+| `literals`    | Array\<string> | Template string literals.    |
+| `expressions` | …\*            | Template string expressions. |
 
 **Returns:** string — The tagged template string.
 
