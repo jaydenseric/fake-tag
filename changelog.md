@@ -22,6 +22,7 @@
 - Check TypeScript types via a new package `types` script.
 - Removed the [`jsdoc-md`](https://npm.im/jsdoc-md) dev dependency and the related package scripts, replacing the readme “API” section with manually written “Examples” and “Exports” sections.
 - Added `esm` and `mjs` keywords to the package `keywords` field.
+- Improved variable and test names within tests.
 - Configured Prettier option `singleQuote` to the default, `false`.
 - Added a `license.md` MIT License file.
 - Improved documentation.
