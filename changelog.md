@@ -10,6 +10,7 @@
 ### Patch
 
 - Also run GitHub Actions CI with Node.js v17.
+- Simplified dev dependencies and config for ESLint.
 
 ## 3.0.0
 
