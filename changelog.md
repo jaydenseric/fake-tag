@@ -9,6 +9,10 @@
 - Removed `./package` from the package `exports` field; the full `package.json` filename must be used in a `require` path.
 - The API is now ESM in `.mjs` files instead of CJS in `.js` files, [accessible via `import` but not `require`](https://nodejs.org/dist/latest/docs/api/esm.html#require).
 
+### Minor
+
+- Added the main `./fakeTag.mjs` module to the package `exports` field to allow it to be deep imported.
+
 ### Patch
 
 - Also run GitHub Actions CI with Node.js v17.

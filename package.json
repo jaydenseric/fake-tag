@@ -30,6 +30,7 @@
   "main": "./fakeTag.mjs",
   "exports": {
     ".": "./fakeTag.mjs",
+    "./fakeTag.mjs": "./fakeTag.mjs",
     "./package.json": "./package.json"
   },
   "engines": {
