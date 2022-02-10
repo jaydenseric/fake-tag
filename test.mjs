@@ -1,7 +1,7 @@
 import { strictEqual } from "assert";
 import TestDirector from "test-director";
 
-import tag from "./index.js";
+import tag from "./fakeTag.mjs";
 
 const tests = new TestDirector();
 

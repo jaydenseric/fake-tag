@@ -19,15 +19,17 @@
     "template",
     "literal",
     "string",
-    "tag"
+    "tag",
+    "esm",
+    "mjs"
   ],
   "files": [
-    "index.js"
+    "fakeTag.mjs"
   ],
   "sideEffects": false,
-  "main": "./index.js",
+  "main": "./fakeTag.mjs",
   "exports": {
-    ".": "./index.js",
+    ".": "./fakeTag.mjs",
     "./package.json": "./package.json"
   },
   "engines": {

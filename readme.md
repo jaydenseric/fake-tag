@@ -33,12 +33,6 @@ _How to `import`._
 > import fakeTag from "fake-tag";
 > ```
 
-_How to `require`._
-
-> ```js
-> const fakeTag = require("fake-tag");
-> ```
-
 _Tagging a [GraphQL](https://graphql.org) SDL string with `gql`._
 
 > ```js

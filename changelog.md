@@ -7,12 +7,14 @@
 - Updated Node.js support to `^12.22.0 || ^14.17.0 || >= 16.0.0`.
 - Updated dev dependencies, some of which require newer Node.js versions than previously supported.
 - Removed `./package` from the package `exports` field; the full `package.json` filename must be used in a `require` path.
+- The API is now ESM in `.mjs` files instead of CJS in `.js` files, [accessible via `import` but not `require`](https://nodejs.org/dist/latest/docs/api/esm.html#require).
 
 ### Patch
 
 - Also run GitHub Actions CI with Node.js v17.
 - Simplified package scripts.
 - Simplified dev dependencies and config for ESLint.
+- Added `esm` and `mjs` keywords to the package `keywords` field.
 - Configured Prettier option `singleQuote` to the default, `false`.
 - Added a `license.md` MIT License file.
 
