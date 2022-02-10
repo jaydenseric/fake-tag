@@ -14,6 +14,7 @@
 - Simplified package scripts.
 - Simplified dev dependencies and config for ESLint.
 - Configured Prettier option `singleQuote` to the default, `false`.
+- Added a `license.md` MIT License file.
 
 ## 3.0.0
 
