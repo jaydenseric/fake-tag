@@ -1,17 +1,15 @@
+// @ts-check
+
 /**
- * A fake template literal tag that doesn’t do anything except return the
- * tagged template string. Import and use the fake tag with the required name,
- * e.g. `gql`.
- * @kind function
- * @name fakeTag
- * @param {Array<string>} literals Template string literals.
- * @param {...*} expressions Template string expressions.
+ * A fake template literal tag that doesn’t do anything except return the tagged
+ * template string. Import and use the fake tag with the required name, e.g.
+ * `gql`.
+ * @param {TemplateStringsArray} literals The template literal’s text segments.
+ * @param {...unknown} expressions The template literal’s embedded expressions.
  * @returns {string} The tagged template string.
- * @example <caption>How to `import`.</caption>
- * ```js
- * import fakeTag from "fake-tag";
- * ```
- * @example <caption>Tagging a [GraphQL](https://graphql.org) SDL string with `gql`.</caption>
+ * @example
+ * Tagging a [GraphQL](https://graphql.org) SDL string with `gql`:
+ *
  * ```js
  * import gql from "fake-tag";
  *

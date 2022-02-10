@@ -1,3 +1,5 @@
+// @ts-check
+
 import { strictEqual } from "assert";
 import TestDirector from "test-director";
 

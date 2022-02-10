@@ -4,7 +4,7 @@
 
 A fake template literal tag to trick syntax highlighters, linters and formatters into action. Interpolations and escapes are tested.
 
-## Setup
+## Installation
 
 To install with [npm](https://npmjs.com/get-npm), run:
 
@@ -12,40 +12,27 @@ To install with [npm](https://npmjs.com/get-npm), run:
 npm install fake-tag
 ```
 
-## API
+## Examples
 
-### function fakeTag
+Tagging a [GraphQL](https://graphql.org) SDL string with `gql`:
 
-A fake template literal tag that doesn’t do anything except return the tagged template string. Import and use the fake tag with the required name, e.g. `gql`.
+```js
+import gql from "fake-tag";
 
-| Parameter     | Type           | Description                  |
-| :------------ | :------------- | :--------------------------- |
-| `literals`    | Array\<string> | Template string literals.    |
-| `expressions` | …\*            | Template string expressions. |
+const typeDefs = gql`
+  "A foo."
+  type Foo {
+    "The \`Foo\` ID."
+    id: ID!
+  }
+`;
+```
 
-**Returns:** string — The tagged template string.
+## Exports
 
-#### Examples
+These ECMAScript modules are published to [npm](https://npmjs.com) and exported via the [`package.json`](./package.json) `exports` field:
 
-_How to `import`._
-
-> ```js
-> import fakeTag from "fake-tag";
-> ```
-
-_Tagging a [GraphQL](https://graphql.org) SDL string with `gql`._
-
-> ```js
-> import gql from "fake-tag";
->
-> const typeDefs = gql`
->   "A foo."
->   type Foo {
->     "The \`Foo\` ID."
->     id: ID!
->   }
-> `;
-> ```
+- [`fakeTag.mjs`](./fakeTag.mjs)
 
 ## FAQ
 
