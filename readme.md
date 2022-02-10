@@ -30,19 +30,19 @@ A fake template literal tag that doesn’t do anything except return the tagged 
 _How to `import`._
 
 > ```js
-> import fakeTag from 'fake-tag';
+> import fakeTag from "fake-tag";
 > ```
 
 _How to `require`._
 
 > ```js
-> const fakeTag = require('fake-tag');
+> const fakeTag = require("fake-tag");
 > ```
 
 _Tagging a [GraphQL](https://graphql.org) SDL string with `gql`._
 
 > ```js
-> import gql from 'fake-tag';
+> import gql from "fake-tag";
 >
 > const typeDefs = gql`
 >   "A foo."

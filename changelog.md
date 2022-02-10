@@ -12,6 +12,7 @@
 
 - Also run GitHub Actions CI with Node.js v17.
 - Simplified dev dependencies and config for ESLint.
+- Configured Prettier option `singleQuote` to the default, `false`.
 
 ## 3.0.0
 

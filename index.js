@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * A fake template literal tag that doesn’t do anything except return the
@@ -11,15 +11,15 @@
  * @returns {string} The tagged template string.
  * @example <caption>How to `import`.</caption>
  * ```js
- * import fakeTag from 'fake-tag';
+ * import fakeTag from "fake-tag";
  * ```
  * @example <caption>How to `require`.</caption>
  * ```js
- * const fakeTag = require('fake-tag');
+ * const fakeTag = require("fake-tag");
  * ```
  * @example <caption>Tagging a [GraphQL](https://graphql.org) SDL string with `gql`.</caption>
  * ```js
- * import gql from 'fake-tag';
+ * import gql from "fake-tag";
  *
  * const typeDefs = gql`
  *   "A foo."
@@ -31,7 +31,7 @@
  * ```
  */
 module.exports = function fakeTag(literals, ...expressions) {
-  let string = '';
+  let string = "";
 
   for (const [index, literal] of literals.entries()) {
     string += literal;
