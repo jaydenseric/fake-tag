@@ -1,6 +1,6 @@
 // @ts-check
 
-import { strictEqual } from "assert";
+import { strictEqual } from "node:assert";
 import TestDirector from "test-director";
 
 import fakeTag from "./fakeTag.mjs";
