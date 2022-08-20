@@ -15,7 +15,7 @@ For [Deno](https://deno.land) and browsers, an example import map:
 ```json
 {
   "imports": {
-    "fake-tag": "https://unpkg.com/fake-tag@4.0.0/fakeTag.mjs"
+    "fake-tag": "https://unpkg.com/fake-tag@5.0.0/fakeTag.mjs"
   }
 }
 ```
