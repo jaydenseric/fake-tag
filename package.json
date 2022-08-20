@@ -37,7 +37,7 @@
   },
   "browserslist": "Node 14.17 - 15 and Node < 15, Node 16 - 17 and Node < 17, Node >= 18, > 0.5%, not OperaMini all, not dead",
   "devDependencies": {
-    "@types/node": "^18.7.6",
+    "@types/node": "^18.7.8",
     "coverage-node": "^8.0.0",
     "eslint": "^8.22.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
