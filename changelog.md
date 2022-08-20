@@ -20,6 +20,10 @@
   - Updated `actions/checkout` to v3.
   - Updated `actions/setup-node` to v3.
 - Removed the now redundant `not IE > 0` from the Browserslist query.
+- Revamped the readme:
+  - Removed the badges.
+  - Added a “Requirements” section.
+  - Added information about Deno, import maps, TypeScript config and [optimal JavaScript module design](https://jaydenseric.com/blog/optimal-javascript-module-design).
 
 ## 4.0.0
 
