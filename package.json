@@ -27,7 +27,6 @@
     "fakeTag.mjs"
   ],
   "sideEffects": false,
-  "main": "./fakeTag.mjs",
   "exports": {
     ".": "./fakeTag.mjs",
     "./fakeTag.mjs": "./fakeTag.mjs",
